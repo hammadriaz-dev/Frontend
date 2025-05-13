@@ -1,0 +1,141 @@
+/* Main form container styling */
+.sign-up-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.95); /* Slightly more opaque for better readability */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(26, 115, 232, 0.5); /* Enhanced shadow and glow effect */
+  margin: 100px auto;
+  position: relative;
+  z-index: 2;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/back.PNG');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Form heading */
+.sign-up-form h2 {
+  text-align: center;
+  color: #1a1e3d;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Summary Box */
+.error-summary {
+  background-color: #ffe5e5;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #c00;
+}
+.error-summary ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 0.9em;
+}
+
+/* Label styling */
+.sign-up-form label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Input and select styling */
+.sign-up-form input,
+.sign-up-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.sign-up-form input:focus,
+.sign-up-form select:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 8px rgba(26, 115, 232, 0.5);
+  outline: none;
+}
+
+/* Error text for individual fields */
+.error-text {
+  color: #d32f2f; /* Softer red */
+  font-size: 0.85em;
+  margin-top: 3px;
+  font-style: italic;
+}
+
+/* Button styling */
+.sign-up-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(145deg, #1a73e8, #1557b5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.sign-up-form button:hover {
+  background: linear-gradient(145deg, #1557b5, #1a73e8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Disabled button styling */
+.sign-up-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Link styling for alternative actions */
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.login-link a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

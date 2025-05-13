@@ -1,0 +1,153 @@
+/* General container styling for both forms */
+.form-container {
+  background: url('../assets/back.PNG') no-repeat center center fixed; /* Set home shadow effect */
+  background-size: cover; /* Cover the entire container with the background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For overlay */
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrollbars during blur */
+}
+
+/* Add semi-transparent navy overlay with blur effect */
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 30, 61, 0.6); /* Dark navy with 60% opacity */
+  backdrop-filter: blur(8px); /* Apply blur to the background */
+  z-index: 1; /* Ensure it is behind the form */
+}
+
+/* Styling for the form box */
+.form-box {
+  width: 100%;
+  max-width: 350px;
+  padding: 50px 40px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient background */
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow effect */
+  position: relative; /* Keeps the form above the overlay */
+  z-index: 2; /* Form stays on top of the overlay */
+  border: 3px solid transparent; /* For glowing border effect */
+  background-clip: padding-box; /* Ensures border is not part of the gradient */
+  box-shadow: 0 0 15px rgba(26, 115, 232, 0.5), 0 8px 15px rgba(0, 0, 0, 0.2); /* Glow + shadow */
+}
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  color: #1a1e3d; /* Navy blue for heading text */
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for style */
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+input:focus,
+select:focus {
+  border-color: #1a73e8; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(26, 115, 232, 0.5); /* Glow effect on focus */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(145deg, #1a73e8, #1557b5); /* Gradient blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background: linear-gradient(145deg, #1557b5, #1a73e8); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight pop-up effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Google Login Button */
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background for Google button */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.google-login:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.google-logo {
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* Alternative Actions */
+.alternative {
+  text-align: center;
+  margin-top: 20px;
+  z-index: 2;
+  color: white;
+}
+
+.alternative a {
+  color: #1a73e8; /* Blue for links */
+  text-decoration: none;
+}
+
+.alternative a:hover {
+  text-decoration: underline;
+}
+
+/* Error Text Styling */
+.error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 3px;
+  z-index: 2;
+}

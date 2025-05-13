@@ -1,0 +1,79 @@
+/* General Body Styles to Keep Header and Footer in Place */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header and Footer Styles */
+  header, footer {
+    background-color: #1a1e3d; /* Dark navy blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Privacy Policy Page Styles */
+  .privacy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    color: #1a1e3d;
+    border-radius: 8px; /* Optional: Rounded corners for a softer look */
+    margin-top: 5rem; /* Space for the header */
+    margin-bottom: 5rem; /* Space for the footer */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #1a1e3d; /* Heading text is dark navy blue */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #1a1e3d; /* Paragraph text is dark navy blue */
+  }
+  
+  ol {
+    margin-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1a1e3d; /* List text is dark navy blue */
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    color: #1a1e3d; /* List item text is dark navy blue */
+  }
+  
+  .privacy-container a {
+    color: #1a1e3d; /* Links are dark navy blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .privacy-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 768px) {
+    .privacy-container {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  

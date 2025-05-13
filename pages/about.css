@@ -1,0 +1,92 @@
+/* Make the entire page background white */
+body {
+    background-color: #1a1e3d; /* Dark Navy Blue background for the entire page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-container {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #ffffff; /* White background for the section */
+    color: #1a1e3d;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333; /* Dark text color for contrast */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 3rem;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.team-card {
+    background-color: #1a1e3d; /* Dark Navy Blue background for each card */
+    border-radius: 12px;
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    color: #ffffff; /* White text color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #cccccc; /* Lighter text color for paragraph */
+}
+
+.video-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    margin-top: 3rem;
+    background: linear-gradient(to bottom, #1a1e3d, rgba(30, 58, 95, 0.8));
+    border-radius: 12px;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.video-section p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
+
+.video-wrapper {
+    max-width: 500px; /* Adjusts the video section to fit the square aspect ratio */
+    margin: 0 auto;
+}
+
+.team-video {
+    width: 100%;
+    height: 500px; /* Ensures the video is square with equal width and height */
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}

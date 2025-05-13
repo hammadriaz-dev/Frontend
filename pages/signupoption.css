@@ -1,0 +1,74 @@
+.signup-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(11, 30, 53, 0.8), rgba(26, 30, 61, 0.8)),
+                url('/src/assets/back1.jpg') center/cover no-repeat; /* Background image */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(50px); /* Apply blur effect to the background */
+}
+
+.signup-options-container h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+    color: white; /* Change text color to white */
+}
+
+.signup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap between buttons */
+    align-items: center;
+    width: 100%;
+}
+
+.signup-button {
+    background-color: #e0e0e0; /* Light grey background */
+    color: white; /* White text for buttons */
+    padding: 25px 50px; /* Larger padding for bigger buttons */
+    font-size: 1.6em; /* Larger font size */
+    border: 2px solid #ccc; /* Grey border */
+    border-radius: 40px; /* More rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a shadow for a 3D effect */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    width: 350px; /* Larger width for buttons */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+.signup-button:hover {
+    background-color: #b3b3b3; /* Darker grey background on hover */
+    transform: translateY(-5px); /* More noticeable hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.signup-button:active {
+    transform: translateY(2px); /* Button pressed effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lighter shadow on click */
+}
+
+.signup-button.student {
+    background-color: #f1f1f1; /* Lighter grey for student button */
+    color: white; /* White text */
+}
+
+.signup-button.student:hover {
+    background-color: #dcdcdc; /* Darker grey on hover */
+}
+
+.signup-button.teacher {
+    background-color: #d1d1d1; /* Medium grey for teacher button */
+    color: white; /* White text */
+}
+
+.signup-button.teacher:hover {
+    background-color: #b8b8b8; /* Darker grey on hover */
+}

@@ -1,0 +1,167 @@
+/* Main form container styling */
+.sign-up-form {
+  width: 100%;
+  max-width: 420px; /* Slightly increased width for better layout */
+  padding: 40px 35px; /* Adjusted padding for better spacing */
+  background: rgba(255, 255, 255, 0.9); /* Transparent white to blend with the background image */
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 25px rgba(26, 115, 232, 0.6); /* Enhanced shadow and glow */
+  margin: 80px auto; /* Center form with slight adjustment */
+  position: relative;
+  z-index: 2; /* Ensure form stays above background */
+  border: 3px solid transparent; /* For glowing border effect */
+  background-clip: padding-box; /* Ensures gradient doesn't affect the border */
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Background blur effect */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/back.PNG'); /* Background image for the page */
+  background-size: cover; /* Ensure it covers the entire area */
+  background-position: center; /* Center the image */
+  filter: blur(12px); /* Increased blur effect */
+  opacity: 0.6; /* Slight transparency for subtle effect */
+  z-index: -1; /* Send the pseudo-element behind everything */
+  transition: filter 0.3s ease; /* Smooth transition for blur effect */
+}
+
+/* Form heading */
+.sign-up-form h2 {
+  text-align: center;
+  color: #1a1e3d; /* Dark navy for text */
+  font-size: 2em;
+  font-weight: 700; /* Bold text */
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  animation: slideIn 0.6s ease-out; /* Slide-in effect */
+}
+
+/* Label styling */
+.sign-up-form label {
+  display: block;
+  color: #333;
+  font-weight: 600; /* Slightly bolder font */
+  margin-top: 15px;
+}
+
+/* Input and select styling */
+.sign-up-form input,
+.sign-up-form select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s ease; /* Smooth transition for interactions */
+}
+
+/* Focus effect for input and select */
+.sign-up-form input:focus,
+.sign-up-form select:focus {
+  border-color: #1a73e8; /* Blue border on focus */
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.7); /* Glowing effect on focus */
+  outline: none;
+}
+
+/* Button styling */
+.sign-up-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(145deg, #1a73e8, #1557b5); /* Gradient blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em; /* Larger font for button */
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced depth */
+  transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.sign-up-form button:hover {
+  background: linear-gradient(145deg, #1557b5, #1a73e8); /* Reversed gradient on hover */
+  transform: translateY(-4px); /* Slight pop-up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Google Sign-In Button */
+.google-sign-in {
+  width: 100%;
+  padding: 14px;
+  background-color: #db4437; /* Google Red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Google button hover effect */
+.google-sign-in:hover {
+  background-color: #c1351d; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight pop-up effect */
+}
+
+/* Error text styling */
+.error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Link styling for alternative actions */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.login-link a {
+  color: #1a73e8; /* Blue link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animation for form fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for form heading */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

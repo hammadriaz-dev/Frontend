@@ -1,0 +1,132 @@
+/* src/pages/contact.css */
+
+.contact-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: #1a1e3d;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero-section hh1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    color:#ffffff;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    width: 35%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-info .info-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info .info-item h3 {
+    font-size: 1.2rem;
+    color: #1a1e3d;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .info-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    width: 60%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+  }
+  
+  .form-field textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  

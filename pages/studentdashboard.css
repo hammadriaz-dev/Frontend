@@ -1,0 +1,366 @@
+/* studentdashboard.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.student-dashboard-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.dashboard-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+/* Upload section */
+.upload-section {
+  background-color: #eef5ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.file-upload-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.file-input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+.upload-icon {
+  font-size: 1.2rem;
+}
+
+.file-name {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Assignment list section */
+.existing-assignments {
+  margin-top: 2rem;
+}
+
+.assignment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f3f8;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-info {
+  text-align: left;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.download-link {
+  text-decoration: none;
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.download-link:hover {
+  background-color: #1a252f;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #2980b9;
+}
+
+/* Back home link */
+.back-home {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+/* Teacher assignments section */
+.teacher-assignments {
+  margin-top: 2rem;
+  background-color: #fdf6e3;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.teacher-assignments h2 {
+  margin-bottom: 1rem;
+  color: #b77f00;
+}
+
+.teacher-assignments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teacher-assignments .assignment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffbe6;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ffe58f;
+}
+
+.teacher-assignments .download-link {
+  text-decoration: none;
+  background-color: #f39c12;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.teacher-assignments .download-link:hover {
+  background-color: #d78e0c;
+}
+
+
+.assignment-item {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.assignment-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.assignment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.assignment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #4a6baf;
+}
+
+.file-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.assignment-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.status-badge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  width: fit-content;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.graded {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.plagiarism-score {
+  font-weight: 600;
+}
+
+.plagiarism-score.high {
+  color: #dc3545;
+}
+
+.plagiarism-score.low {
+  color: #28a745;
+}
+
+.submission-date {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.teacher-assignments {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-assignments h2 {
+  color: #343a40;
+  margin-bottom: 1.5rem;
+}
+
+.assignments-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.assignment-item:hover {
+  transform: translateY(-2px);
+}
+
+.assignment-info {
+  flex: 1;
+}
+
+.assignment-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #495057;
+}
+
+.assignment-description {
+  margin: 0 0 0.5rem 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.assignment-due {
+  margin: 0;
+  color: #dc3545;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.download-link:hover {
+  background-color: #0056b3;
+}
+
+.download-icon {
+  margin-right: 0.5rem;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}

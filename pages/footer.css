@@ -1,0 +1,41 @@
+/* src/components/footer.css */
+.footer {
+    background-color: #1a1e3d; /* Navy blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ensure layout has space for footer */
+  .layout-container {
+    min-height: 100vh; /* Makes sure the layout fills the whole page */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* This allows the main content to take up available space */
+  }
+  

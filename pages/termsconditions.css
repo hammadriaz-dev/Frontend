@@ -1,0 +1,84 @@
+/* General Body Styles */
+html, body {
+  height: 100%; /* Ensure the body takes up full height */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack header, content, and footer vertically */
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: #1a1e3d; /* Dark navy blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  width: 100%; /* Footer takes up full width */
+}
+
+/* Terms and Conditions Page Styles */
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff; /* Set background color to white */
+  color: #1a1e3d; /* Set text color to dark navy blue for this page */
+  margin-top: 5rem; /* Space for the header */
+  margin-bottom: 5rem; /* Space for the footer */
+  flex-grow: 1; /* This ensures the content takes up remaining space */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1a1e3d; /* Dark navy blue for heading text */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #1a1e3d; /* Dark navy blue for paragraphs */
+}
+
+ol {
+  margin-left: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1a1e3d; /* Dark navy blue for list text */
+}
+
+li {
+  margin-bottom: 1rem;
+  color: #1a1e3d; /* Dark navy blue for list items */
+}
+
+.terms-container a {
+  color: #1a1e3d; /* Dark navy blue for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* To ensure footer stays at the bottom of the page */
+.main-content {
+  flex-grow: 1; /* This ensures content takes up available space */
+}

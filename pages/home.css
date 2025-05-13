@@ -1,0 +1,253 @@
+/* Enable smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling enabled for all anchor links */
+}
+
+/* Global styling for home page */
+.home-container {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background for the entire page */
+  color: #1a1e3d; /* Navy blue for text */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  background-color: #1a1e3d; /* Navy blue background */
+  color: #ffffff; /* White text */
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 30px; /* Adds spacing between buttons */
+}
+
+.cta-button {
+  background-color: #ffffff; /* White button */
+  color: #1a1e3d; /* Navy blue text on button */
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.hero-image img {
+  width: 50%;
+  height: auto;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #ffffff; /* White background */
+}
+
+.features-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1a1e3d; /* Navy blue for section title */
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.feature-card {
+  width: 30%;
+  background-color: #ffffff; /* White background for feature cards */
+  border: 2px solid #1a1e3d; /* Navy blue border */
+  padding: 20px;
+  border-radius: 8px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Cards start from below */
+  animation: slideIn 1s forwards; /* Animation applied when page loads */
+  animation-delay: 0.3s; /* Delay for sequential animation */
+}
+
+.feature-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.feature-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.feature-card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #1a1e3d;
+}
+
+.feature-card p {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f0f0f0; /* Light gray background */
+  text-align: center;
+  padding: 50px 10%;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1a1e3d; /* Navy blue for section title */
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Updated Testimonial Card Styling */
+.testimonial-card {
+  width: 45%;
+  background-color: #1a1e3d; /* Dark navy blue background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #1a1e3d; /* Navy blue border */
+  color: white; /* White text for better contrast */
+}
+
+.testimonial-card p {
+  font-size: 1.2em;
+  color: white; /* White text for the testimonial */
+}
+
+.testimonial-card span {
+  display: block;
+  font-size: 1em;
+  color: #aaa; /* Lighter gray text for the name */
+  margin-top: 10px;
+}
+
+/* Join Us Section - With a semi-transparent navy blue overlay */
+.join-us-section {
+  text-align: center;
+  padding: 50px 10%;
+  position: relative; /* Needed for absolute positioning of overlay */
+  background-image: url('../assets/studteacher.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  margin-bottom: 50px; /* Adds space to visually separate it from the footer */
+}
+
+/* Create a navy blue overlay */
+.join-us-section::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute; /* Position it over the section */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 30, 61, 0.6); /* Navy blue color with 60% opacity */
+  z-index: 1; /* Make sure the overlay stays on top of the background */
+}
+
+/* Style for the text and cards inside the section */
+.join-us-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white; /* White text */
+  position: relative; /* Ensures text stays above the overlay */
+  z-index: 2; /* Positioning the text above the overlay */
+}
+
+.join-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative; /* Ensures cards stay above the overlay */
+  z-index: 2; /* Positioning the cards above the overlay */
+}
+
+.join-card {
+  width: 45%;
+  background-color: #ffffff; /* White background for cards */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #1a1e3d; /* Navy blue border */
+}
+
+.join-card h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a1e3d; /* Navy blue color for headings */
+}
+
+.join-card p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.join-button {
+  background-color: #1a1e3d; /* Navy blue button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.join-button:hover {
+  background-color: #333; /* Darker navy blue on hover */
+}

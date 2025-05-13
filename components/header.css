@@ -1,0 +1,169 @@
+/* Header styles */
+.header {
+  background: linear-gradient(135deg, #1f4b7c, #1a1e3d); /* Gradient background for a modern look */
+  border-radius: 20px; /* Softer, but still slightly rounded corners */
+  padding: 8px 40px; /* Reduced padding to make the header thinner */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+  transition: all 0.3s ease; /* Smooth transition effect for hover interactions */
+  border: 3px solid #4a90e2; /* Bold blue border around the header */
+}
+
+.header:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increase shadow depth on hover */
+  transform: translateY(-5px); /* Slight hover lift effect */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.8em; /* Adjust font size for a slightly smaller, cleaner look */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo image and text */
+}
+
+.logo img {
+  height: 40px; /* Smaller logo size to match the thinner header */
+  width: 40px;
+  border-radius: 50%; /* Round logo image */
+  object-fit: cover; /* Ensures logo is cropped to fit perfectly */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; /* Reduced margin for more compact navigation */
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 1em; /* Slightly smaller font for a thinner header */
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white; /* Underline effect */
+  transition: width 0.3s ease; /* Smooth underline expansion */
+}
+
+.nav a:hover {
+  color: #e4e4e4; /* Slightly lighter text color on hover */
+}
+
+.nav a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add gap between input and button */
+}
+
+.search-bar input {
+  padding: 8px 12px; /* Reduced padding for thinner input field */
+  font-size: 1em;
+  border: none;
+  border-radius: 20px; /* Rounded input field */
+  width: 220px; /* Slightly narrower input field */
+  transition: all 0.3s ease;
+  background-color: #ffffff; /* White input field */
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #4a90e2; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Light shadow effect on focus */
+}
+
+.search-bar button {
+  background-color: #4a90e2; /* Bright blue button */
+  color: white;
+  border: none;
+  padding: 8px 15px; /* Reduced padding for thinner button */
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #357ab7; /* Darker blue on hover */
+  transform: translateY(-2px); /* Hover lift effect */
+}
+
+.auth-buttons button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px 15px; /* Reduced padding for thinner button */
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 150px; /* Uniform button size */
+}
+
+.auth-buttons button:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px); /* Hover lift effect */
+}
+
+/* Add margin-right to the sign-up button for spacing */
+.auth-buttons .signup-btn {
+  margin-right: 20px; /* Increased spacing between buttons */
+}
+
+/* Logout button styles */
+.logout-btn {
+  background-color: #e74c3c; /* Red background */
+  color: white;
+  padding: 8px 15px; /* Consistent padding */
+  font-size: 1em;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 150px; /* Uniform button size */
+}
+
+.logout-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: translateY(-2px); /* Hover lift effect */
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px; /* Padding adjustment for mobile devices */
+  }
+
+  .nav {
+    margin-bottom: 15px; /* More space between nav and other sections */
+  }
+
+  .search-bar {
+    margin-bottom: 15px;
+  }
+
+  .auth-buttons {
+    margin-top: 15px;
+  }
+}
